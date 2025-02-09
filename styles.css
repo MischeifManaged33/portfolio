@@ -1,4 +1,47 @@
+#TextContent .colorful {
+    background-image: url("./rainbow_gradient.jpeg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#TextContent p {
+    white-space: nowrap;
+    font-size: min(40px, 3vw);
+    color: white;
+}
+
+#TextContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 6vh;
+}
+
+#Profile img {
+    width: min(450px, 50%);
+}
+
+#Profile {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#MainContent {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 75%;
+}
+
 body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-color: #1E2F37;
-    background-image: url("/Users/mischief/Downloads/axiom-pattern.png");
+    background-image: url("./Background/axiom-pattern.png");
+    width: 100%;
 }
