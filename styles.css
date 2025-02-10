@@ -1,3 +1,55 @@
+#Logos img {
+    width: min(50px, 3vw);
+    height: min(50px, 3vw);
+}
+
+#Logos a {
+    width: fit-content;
+    height: fit-content;
+}
+
+#Logos {
+    display: flex;
+    opacity: 100;
+    width: min(50px, 3vw);
+    height: min(50px, 3vw);
+    gap: 50%;
+}
+
+
+#Location img {
+    margin-right: 3%;
+    width: min(25px, 3vw);
+    height: min(25px, 3vw);
+}
+
+#Location {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+#MoreInfo p {
+    margin: 0;
+    font-size: min(25px, 3vw);
+    white-space: nowrap;
+}
+
+#MoreInfo {
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    opacity: 63%;
+}
+
+#Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 #TextContent .colorful {
     background-image: url("./rainbow_gradient.jpeg");
     -webkit-background-clip: text;
@@ -6,19 +58,22 @@
 
 #TextContent p {
     white-space: nowrap;
-    font-size: min(40px, 3vw);
+    font-size: min(25px, 3vw);
     color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
 }
 
 #TextContent {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
-    width: 200px;
-    height: 6vh;
+    width:fit-content;
+    height: fit-content;
 }
 
-#Profile img {
+#Profile .MainImage {
     width: min(450px, 50%);
 }
 
@@ -44,4 +99,11 @@ body {
     background-color: #1E2F37;
     background-image: url("./Background/axiom-pattern.png");
     width: 100%;
+    font-family: jetBrains;
 }
+
+@font-face {
+    font-family: jetBrains;
+    src: url("./JetBrainsMono-VariableFont_wght.ttf");
+}
+
