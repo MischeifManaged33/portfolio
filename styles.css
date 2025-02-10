@@ -1,6 +1,16 @@
+#WorkExperience p {
+    color: white;
+    font-size: min(1.5rem, 3vw);
+}
+
+#WorkExperience {
+    width: 100vw;
+    margin-top: 10%;
+}
+
 #Logos img {
-    width: min(50px, 3vw);
-    height: min(50px, 3vw);
+    width: min(50px, 4vw);
+    height: min(50px, 4vw);
 }
 
 #Logos a {
@@ -47,7 +57,7 @@
 #Content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 #TextContent .colorful {
@@ -74,7 +84,7 @@
 }
 
 #Profile .MainImage {
-    width: min(450px, 50%);
+    width: min(400px, 50%);
 }
 
 #Profile {
@@ -83,12 +93,14 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 7vw;
 }
 
 #MainContent {
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 75%;
 }
 
