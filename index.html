@@ -32,8 +32,8 @@
                         <div id="Logos">
                             <a href="https://www.linkedin.com/in/emma-albright-7b770b28b/" target=_blank><img src="./Linkedin.png"></a>
                             <a href="https://github.com/MischeifManaged33"><img src="./Github.png"></a>
-                            <a href=""><img src="./mail.png"></a>
-                            <a href=""><img src="./File text.png"></a>
+                            <a href="" onclick="copyToClip()"><img src="./mail.png"></a>
+                            <a href="./Sarah_Albright-Resume2024-NIMMDB.docx.pdf" download><img src="./File text.png"></a>
                         </div>
                     </div>
                 </div>
@@ -66,39 +66,219 @@
                 <p id="ProjectTitle">Projects</p>
                 <div id="Cards">
                     <div id="NovelIdeas" class="Card">
-                        <img src="./app-icon-purple 1.png">
-                        <p class="ProjectTitle">Novel Ideas</p>
+                        <img src="./app-icon-purple 1.png" class="MainImg">
+                        <div class="CardContent">
+                            <p class="ProjectTitle">Novel Ideas</p>
                         <p class="Description">iOS Mobile App</p>
-                        <div class="ProjectLogos">
                         </div>
-                        <button class="LearnMoreButton">Learn More</button>
+                        <div class="ProjectLogos">
+                            <img src="./swift-logo.svg" class="LogoImg">
+                            <img src="./firebase-logo.png" class="LogoImg">
+                        </div>
+                        <button id="NovelIdeasBtn" class="LearnMoreButton">Learn More</button>
                     </div>
                     <div id="Dewy" class="Card">
-                        <img src="./dewey 1.png">
-                        <p class="ProjectTitle">Dewy</p>
-                        <p class="Description">Discord Bot</p>
-                        <div class="ProjectLogos">
+                        <img src="./dewey 1.png" class="MainImg">
+                        <div class="CardContent">
+                            <p class="ProjectTitle">Dewy</p>
+                            <p class="Description">Discord Bot</p>
                         </div>
-                        <button class="LearnMoreButton">Learn More</button>
+                        <div class="ProjectLogos">
+                            <img src="./Discord.js.png" class="LogoImg">
+                            <img src="./JavaScript-logo.png" class="LogoImg">
+                            <img src="./MongoDB-logo.png" class="LogoImg">
+                        </div>
+                        <button id="DewyBtn" class="LearnMoreButton">Learn More</button>
                     </div>
                     <div id="TerRand" class="Card">
-                        <img src="./image 53.png">
-                        <p class="ProjectTitle">TerRand</p>
-                        <p class="Description">Unity Plugin</p>
-                        <div class="ProjectLogos">
+                        <img src="./image 53.png" class="MainImg">
+                        <div class="CardContent">
+                            <p class="ProjectTitle">TerRand</p>
+                            <p class="Description">Unity Plugin</p>
                         </div>
-                        <button class="LearnMoreButton">Learn More</button>
+                        <div class="ProjectLogos">
+                            <img src="./unity-logo.png" class="LogoImg">
+                            <img src="./Csharp_Logo.png" class="LogoImg">
+                        </div>
+                        <button id="TerrandBtn" class="LearnMoreButton">Learn More</button>
                     </div>
                     <div id="MidnightMobilizers" class="Card">
-                        <img src="./image 57.png">
-                        <p class="ProjectTitle">Dewy</p>
-                        <p class="Description">Discord Bot</p>
-                        <div class="ProjectLogos">
+                        <img src="./image 57.png" class="MainImg">
+                        <div class="CardContent">
+                            <p class="ProjectTitle">Dewy</p>
+                            <p class="Description">Discord Bot</p>
                         </div>
-                        <button class="LearnMoreButton">Learn More</button>
+                        <div class="ProjectLogos">
+                            <img src="./JavaScript-logo.png" class="LogoImg">
+                        </div>
+                        <button id="MidnightBtn" class="LearnMoreButton">Learn More</button>
                     </div>
                 </div>
+            </div>
+            <div id="Footer">
+                <hr>
+                <p>© Sarah Albright 2024</p>
             </div>
         </div>
     </body>
 </html>
+
+<div id="NovelIdeasModal" class="modal">
+
+<!-- Modal content -->
+    <div class="modal-content">
+        <p class="ModalTitle">Novel Ideas</p>
+        <p class="ModalDate">Summer 2024</p>
+        <div class="ModalMedia">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/p6ArKfrMrzs?si=yJJLmKZgD9prvhnY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="TechnologiesTitle">Technologies</p>
+        <div class="Technology">
+            <div class="SwiftLogo">
+                <img src="swift-logo.svg" class="LogoModal">
+                <p>Swift</p>
+            </div>
+            <div class="SwiftLogo">
+                <img src="./firebase-logo.png" class="LogoModal">
+                <p>Firebase</p>
+            </div>
+        </div>
+        <p>My Responsibilities</p>
+        <ul>
+            <li>Developed an iOS app with Storyboard, Swift, Google Books API, and Firebase, serving as a social media
+platform for book enthusiasts.</li>
+            <li>Features include tracking books, customizing categories, joining book clubs, setting reading goals, and
+managing announcements.</li>
+        </ul>
+    </div>
+
+</div>
+
+<div id="DewyModal" class="modal">
+
+<!-- Modal content -->
+    <div class="modal-content">
+        <p class="ModalTitle">Dewy</p>
+        <p class="ModalDate">Fall 2022</p>
+        <p class="TechnologiesTitle">Technologies</p>
+        <div class="Technology">
+            <div class="SwiftLogo">
+                <img src="./Discord.js.png" class="LogoModal">
+                <p>Discord.js</p>
+            </div>
+            <div class="SwiftLogo">
+                <img src="./JavaScript-logo.png" class="LogoModal">
+                <p>JavaScript</p>
+            </div>
+            <div class="SwiftLogo">
+                <img src="./MongoDB-logo.png" class="LogoModal">
+                <p>MongoDB</p>
+            </div>
+        </div>
+        <p>My Responsibilities</p>
+        <ul>
+            <li>Designed a Discord bot using Discord.js, Node.js, and
+                MongoDB to manage and track debts between users.</li>
+        </ul>
+    </div>
+
+</div>
+
+<div id="TerrandModal" class="modal">
+
+<!-- Modal content -->
+    <div class="modal-content">
+        <div class="ModalMedia">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dnPro-PolAM?si=EGYI6HiNSX2_fX7N" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="ModalTitle">TerRand</p>
+        <p class="ModalDate">Spring 2024</p>
+        <p class="TechnologiesTitle">Technologies</p>
+        <div class="Technology">
+            <div class="SwiftLogo">
+                <img src="./unity-logo.png" class="LogoModal">
+                <p>Unity</p>
+            </div>
+            <div class="SwiftLogo">
+                <img src="./Csharp_Logo.png" class="LogoModal">
+                <p>C#</p>
+            </div>
+        </div>
+        <p>My Responsibilities</p>
+        <p>TerRand is a Unity plugin that transforms a simple plane into procedurally generated terrain using Perlin noise. It features automatic recoloring based on height variation and dynamically adjusts the level of detail (LOD) depending on the camera’s distance, optimizing performance while maintaining visual quality. Designed for flexibility and efficiency, TerRand enables seamless terrain generation for games and simulations, providing an easy-to-use solution for developers looking to create varied landscapes with minimal manual effort.</p>
+    </div>
+
+</div>
+
+<div id="MidnightModal" class="modal">
+
+<!-- Modal content -->
+    <div class="modal-content">
+        <p class="ModalTitle">Midnight Mobilizers</p>
+        <p class="ModalDate">Spring 2024</p>
+        <p class="TechnologiesTitle">Technologies</p>
+        <div class="Technology">
+            <div class="SwiftLogo">
+                <img src="./JavaScript-logo.png" class="LogoModal">
+                <p>JavaScript</p>
+            </div>
+        </div>
+        <p>My Responsibilities</p>
+        <ul>
+            <li>Created a JavaScript algorithm for employee scheduling during a hackathon, incorporating availability,
+work hours, and location.</li>
+            <li>Designed a weighted randomization system to prioritize employees needing more hours while
+maintaining fairness.</li>
+            <li>Awarded the UT category prize at the annual WICS hackathon.</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("NovelIdeasModal");
+var dmodal = document.getElementById("DewyModal");
+var tmodal = document.getElementById("TerrandModal")
+var mmodal = document.getElementById("MidnightModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("NovelIdeasBtn");
+var dbtn = document.getElementById("DewyBtn");
+var tbtn = document.getElementById("TerrandBtn");
+var mbtn = document.getElementById("MidnightBtn")
+
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+    
+dbtn.onclick = function() {
+  dmodal.style.display = "block";
+}
+    
+tbtn.onclick = function() {
+  tmodal.style.display = "block";
+}
+
+mbtn.onclick = function() {
+  mmodal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+    if (event.target == dmodal) {
+    dmodal.style.display = "none";
+  }
+    if (event.target == tmodal) {
+    tmodal.style.display = "none";
+  }
+    if (event.target == mmodal) {
+    mmodal.style.display = "none";
+  }
+}
+</script>

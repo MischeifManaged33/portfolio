@@ -1,14 +1,128 @@
+.ModalDate {
+    font-size: .8rem;
+    opacity: 50%;
+    margin: 0;
+}
+
+.ModalTitle {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.ModalMedia {
+    overflow: auto;
+}
+
+.LogoModal {
+    width: 100%;
+}
+
+.SwiftLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+}
+
+.Technology {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    justify-content: space-evenly;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 80%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: white;
+  background-image: url("./diamond-upholstery.png");
+  margin: auto;
+  padding: 5%;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+hr {
+    width: 90%;
+}
+
+#Footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    margin-top: 10%;
+}
+
+.Description {
+    opacity: 50%;
+}
+
+button {
+    width: 40%;
+    height: 10%;
+    border-radius: 50px;
+    background-color: #6f0bd4;
+    color: white;
+    margin-top: auto;
+    margin-bottom: 5%;
+}
+
+.CardContent {
+    width: 80%;
+    margin-top: 3%;
+}
+
+.LogoImg {
+    width: 20%;
+}
+
+.ProjectLogos {
+    display: flex;
+    gap: 1%;
+    width: 80%;
+}
+
 #Cards {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .Card p {
     color: black;
+    margin: 0;
 }
 
-.Card img {
+.MainImg {
     width: 80%;
     margin-top: 10px;
 }
@@ -21,13 +135,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0, 4, 10, 15, black;
     margin-top: 2%;
 }
 
 #ProjectTitle {
     width: 100%;
     color: white;
+    font-size: min(1.5rem, 3vw);
 }
 
 #Projects {
@@ -68,7 +182,7 @@
     width: 100%;
 }
 
-p.WorkTitle {
+.WorkTitle {
     font-size: min(1.5rem, 3vw);
 }
 
