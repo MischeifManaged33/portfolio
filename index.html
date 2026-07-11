@@ -1,299 +1,1120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Sarah "Emma" Albright</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="MainContent">
-            <div id="Profile">
-                <img class="MainImage" src="./Mask group.png">
-                <div id="Content">
-                    <div id="TextContent">
-                    <p>I am Sarah </p>
-                    <div id="Color">
-                        <p class="colorful">"Emma"</p>
-                    </div>
-                    <p>Albright</p>
-                </div>
-                    <div id="MoreInfo">
-                        <p>CS Student at UT</p>
-                        <div id="Location">
-                            <div id="Pin">
-                                <img src="./Icon.png">
-                            </div>
-                            <p>Gilmer, TX, USA</p>
-                        </div>
-                        <div id="Logos">
-                            <a href="https://www.linkedin.com/in/emma-albright-7b770b28b/" target=_blank><img src="./Linkedin.png"></a>
-                            <a href="https://github.com/MischeifManaged33"><img src="./Github.png"></a>
-                            <a href="" onclick="copyToClip()"><img src="./mail.png"></a>
-                            <a href="./Sarah_Albright-Resume2024-NIMMDB.docx.pdf" download><img src="./File text.png"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="WorkExperience">
-                <p class="WorkTitle">Work Experience</p>
-                <div id="Timeline">
-                    <img src="./Line.png">
-                    <div id="Places">
-                        <div id="NightOps">
-                            <p class="JobTitle">Student Security Coordinator</p>
-                            <p class="Location">UT Austin Housing and Dining - Austin, TX</p>
-                            <p class="Date">November 2021 - December 2024</p>
-                        </div>
-                        <div id="NetData">
-                            <p class="JobTitle">Software Intern</p>
-                            <p class="Location">I3 Verticals - Sulphur Springs, TX</p>
-                            <p class="Date">May 2022 - August 2022</p>
-                            <p class="Date">June 2023 - August 2023</p>
-                        </div>
-                        <div id="Outlier">
-                            <p class="JobTitle">AI Quality Checker</p>
-                            <p class="Location">Freelance</p>
-                            <p class="Date">December 2024 - Present</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="Projects">
-                <p id="ProjectTitle">Projects</p>
-                <div id="Cards">
-                    <div id="NovelIdeas" class="Card">
-                        <img src="./app-icon-purple 1.png" class="MainImg">
-                        <div class="CardContent">
-                            <p class="ProjectTitle">Novel Ideas</p>
-                        <p class="Description">iOS Mobile App</p>
-                        </div>
-                        <div class="ProjectLogos">
-                            <img src="./swift-logo.svg" class="LogoImg">
-                            <img src="./firebase-logo.png" class="LogoImg">
-                        </div>
-                        <button id="NovelIdeasBtn" class="LearnMoreButton">Learn More</button>
-                    </div>
-                    <div id="Dewy" class="Card">
-                        <img src="./dewey 1.png" class="MainImg">
-                        <div class="CardContent">
-                            <p class="ProjectTitle">Dewy</p>
-                            <p class="Description">Discord Bot</p>
-                        </div>
-                        <div class="ProjectLogos">
-                            <img src="./Discord.js.png" class="LogoImg">
-                            <img src="./JavaScript-logo.png" class="LogoImg">
-                            <img src="./MongoDB-logo.png" class="LogoImg">
-                        </div>
-                        <button id="DewyBtn" class="LearnMoreButton">Learn More</button>
-                    </div>
-                    <div id="TerRand" class="Card">
-                        <img src="./image 53.png" class="MainImg">
-                        <div class="CardContent">
-                            <p class="ProjectTitle">TerRand</p>
-                            <p class="Description">Unity Plugin</p>
-                        </div>
-                        <div class="ProjectLogos">
-                            <img src="./unity-logo.png" class="LogoImg">
-                            <img src="./Csharp_Logo.png" class="LogoImg">
-                        </div>
-                        <button id="TerrandBtn" class="LearnMoreButton">Learn More</button>
-                    </div>
-                    <div id="MidnightMobilizers" class="Card">
-                        <img src="./image 57.png" class="MainImg">
-                        <div class="CardContent">
-                            <p class="ProjectTitle">Midnight Mobilizers</p>
-                            <p class="Description">Scheduling Algorithm</p>
-                        </div>
-                        <div class="ProjectLogos">
-                            <img src="./JavaScript-logo.png" class="LogoImg">
-                        </div>
-                        <button id="MidnightBtn" class="LearnMoreButton">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            <div id="Footer">
-                <hr>
-                <p>© Sarah Albright 2024</p>
-            </div>
-        </div>
-    </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah "Emma" Albright</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0e10;
+      --surface: #16161a;
+      --surface2: #1e1e24;
+      --border: rgba(255,255,255,0.08);
+      --border-hover: rgba(255,255,255,0.18);
+      --text: #f0f0f0;
+      --muted: #888;
+      --accent: #a78bfa;
+      --accent-dim: rgba(167,139,250,0.12);
+      --accent-border: rgba(167,139,250,0.35);
+      --green: #4ade80;
+      --green-dim: rgba(74,222,128,0.12);
+      --mono: 'JetBrains Mono', monospace;
+      --sans: 'Inter', sans-serif;
+      --radius: 10px;
+      --radius-lg: 16px;
+    }
 
-<div id="NovelIdeasModal" class="modal">
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p class="ModalTitle">Novel Ideas</p>
-        <p class="ModalDate">Summer 2024</p>
-        <div class="ModalMedia">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/p6ArKfrMrzs?si=yJJLmKZgD9prvhnY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Layout ── */
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--accent-border);
+      flex-shrink: 0;
+      background: var(--surface2);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-name {
+      font-family: var(--mono);
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+
+    .hero-name .accent { color: var(--accent); }
+
+    .hero-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 3px;
+      font-family: var(--mono);
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--green-dim);
+      border: 1px solid rgba(74,222,128,0.25);
+      color: var(--green);
+      font-size: 11px;
+      font-family: var(--mono);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-top: 6px;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .hero-about {
+      font-size: 14px;
+      color: #aaa;
+      line-height: 1.75;
+      max-width: 560px;
+      font-family: var(--mono);
+    }
+
+    .hero-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .hero-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-family: var(--mono);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: var(--radius);
+      background: var(--surface);
+      transition: border-color .2s, color .2s;
+    }
+
+    .hero-link:hover {
+      border-color: var(--border-hover);
+      color: var(--text);
+    }
+
+    .hero-link svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* ── Section label ── */
+    .section { margin-bottom: 3rem; }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Featured project ── */
+    .featured-card {
+      background: var(--surface);
+      border: 1px solid var(--accent-border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: border-color .2s;
+      cursor: pointer;
+    }
+
+    .featured-card:hover { border-color: var(--accent); }
+
+    .featured-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .featured-name {
+      font-family: var(--mono);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .steam-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-family: var(--mono);
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid rgba(74,222,128,0.25);
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .featured-desc {
+      font-size: 13px;
+      color: #aaa;
+      font-family: var(--mono);
+    }
+
+    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    .tag {
+      font-size: 11px;
+      font-family: var(--mono);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .tag.accent-tag {
+      background: var(--accent-dim);
+      border-color: var(--accent-border);
+      color: var(--accent);
+    }
+
+    /* ── Project grid ── */
+    .proj-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .proj-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.1rem 1.1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      cursor: pointer;
+      transition: border-color .2s, transform .15s;
+    }
+
+    .proj-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+
+    .proj-card-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      object-fit: cover;
+      background: var(--surface2);
+    }
+
+    .proj-card-name {
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .proj-card-type {
+      font-size: 11px;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+
+    .wip-badge {
+      font-size: 10px;
+      font-family: var(--mono);
+      background: rgba(251,191,36,0.12);
+      color: #fbbf24;
+      border: 1px solid rgba(251,191,36,0.25);
+      padding: 1px 7px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    /* ── Skills ── */
+    .skills-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .skill {
+      font-family: var(--mono);
+      font-size: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: #ccc;
+      padding: 4px 12px;
+      border-radius: 8px;
+      transition: border-color .15s, color .15s;
+    }
+
+    .skill:hover {
+      border-color: var(--accent-border);
+      color: var(--accent);
+    }
+
+    /* ── Experience ── */
+    .exp-list { display: flex; flex-direction: column; }
+
+    .exp-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .exp-item:last-child { border-bottom: none; }
+
+    .exp-timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      width: 16px;
+      flex-shrink: 0;
+      padding-top: 4px;
+    }
+
+    .exp-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid var(--border-hover);
+      background: var(--bg);
+      flex-shrink: 0;
+    }
+
+    .exp-dot.active {
+      border-color: var(--green);
+      background: var(--green);
+      box-shadow: 0 0 8px rgba(74,222,128,0.4);
+    }
+
+    .exp-line {
+      width: 1px;
+      flex: 1;
+      background: var(--border);
+      min-height: 20px;
+    }
+
+    .exp-body { flex: 1; }
+
+    .exp-title {
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .exp-company {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--mono);
+      margin-top: 2px;
+    }
+
+    .exp-date {
+      font-size: 11px;
+      color: var(--muted);
+      font-family: var(--mono);
+      margin-top: 2px;
+      opacity: 0.7;
+    }
+
+    .exp-detail {
+      font-size: 12px;
+      color: #888;
+      font-family: var(--mono);
+      margin-top: 6px;
+      line-height: 1.6;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* ── Modal ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-box {
+      background: var(--surface);
+      border: 1px solid var(--border-hover);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      position: relative;
+      animation: modal-in .2s ease;
+    }
+
+    @keyframes modal-in {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color .15s;
+    }
+
+    .modal-close:hover { color: var(--text); }
+
+    .modal-title {
+      font-family: var(--mono);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .modal-date {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--mono);
+      margin-bottom: 1.25rem;
+    }
+
+    .modal-video {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border);
+    }
+
+    .modal-video iframe { width: 100%; height: 100%; border: none; }
+
+    .modal-section-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .modal-tech-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 1.25rem;
+    }
+
+    .modal-tech {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+
+    .modal-tech img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    .modal-body {
+      font-size: 13px;
+      color: #aaa;
+      font-family: var(--mono);
+      line-height: 1.75;
+    }
+
+    .modal-body ul {
+      padding-left: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .hero-top { flex-direction: column; align-items: flex-start; }
+      .featured-top { flex-direction: column; }
+      .footer { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ── Scroll fade-in ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── Starfield ── */
+    #starfield {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .page { position: relative; z-index: 1; }
+
+    /* ── Hero glow ── */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: -80px;
+      width: 420px;
+      height: 320px;
+      background: radial-gradient(ellipse at center, rgba(167,139,250,0.07) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero { position: relative; }
+    .hero > * { position: relative; z-index: 1; }
+
+    /* ── Accent shimmer on featured card ── */
+    .featured-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 60%;
+      height: 200%;
+      background: linear-gradient(105deg, transparent 40%, rgba(167,139,250,0.06) 50%, transparent 60%);
+      transform: skewX(-15deg);
+      animation: shimmer 4s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes shimmer {
+      0%   { left: -60%; }
+      60%  { left: 120%; }
+      100% { left: 120%; }
+    }
+
+    /* ── Skill hover glow ── */
+    .skill {
+      transition: border-color .15s, color .15s, box-shadow .15s;
+    }
+
+    .skill:hover {
+      border-color: var(--accent-border);
+      color: var(--accent);
+      box-shadow: 0 0 10px rgba(167,139,250,0.15);
+    }
+
+    /* ── Avatar orbit ring ── */
+    .avatar-wrap {
+      position: relative;
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+    }
+
+    .avatar-ring {
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      border: 1.5px solid transparent;
+      border-top-color: var(--accent);
+      border-right-color: rgba(167,139,250,0.3);
+      animation: orbit 3s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes orbit {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<div class="page">
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-top">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <div class="avatar">
+          <img src="./Mask group.png" alt="Sarah Albright">
         </div>
-        <p class="TechnologiesTitle">Technologies</p>
-        <div class="Technology">
-            <div class="SwiftLogo">
-                <img src="swift-logo.svg" class="LogoModal">
-                <p>Swift</p>
-            </div>
-            <div class="SwiftLogo">
-                <img src="./firebase-logo.png" class="LogoModal">
-                <p>Firebase</p>
-            </div>
+      </div>
+      <div>
+        <div class="hero-name">Sarah <span class="accent">"Emma"</span> Albright</div>
+        <div class="hero-sub">CS @ UT Austin &nbsp;·&nbsp; Austin, TX &nbsp;·&nbsp; Dec 2025</div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Open to work
         </div>
-        <p>My Responsibilities</p>
-        <ul>
-            <li>Developed an iOS app with Storyboard, Swift, Google Books API, and Firebase, serving as a social media
-platform for book enthusiasts.</li>
-            <li>Features include tracking books, customizing categories, joining book clubs, setting reading goals, and
-managing announcements.</li>
-        </ul>
+      </div>
     </div>
+
+    <p class="hero-about">
+      I've been building games and software since high school — across Unity, Godot, Swift, and the web. I care about shipping things real people actually use. Currently finishing my CS degree and looking for software engineering and game dev roles.
+    </p>
+
+    <div class="hero-links">
+      <a class="hero-link" href="https://www.linkedin.com/in/emma-albright-7b770b28b/" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a class="hero-link" href="https://github.com/MischeifManaged33" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a class="hero-link" href="https://gitlab.com/e.albright33" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="m22.65 14.39-9.33 9.33a1 1 0 0 1-1.42 0L2.57 14.4a1 1 0 0 1-.24-1L4.2 6.27a1 1 0 0 1 .77-.67L12 4l7.03 1.6a1 1 0 0 1 .77.67l1.87 7.13a1 1 0 0 1-.02.99z"/></svg>
+        GitLab
+      </a>
+      <a class="hero-link" href="#" onclick="copyEmail(event)">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span id="email-label">e.albright33@gmail.com</span>
+      </a>
+      <a class="hero-link" href="./Sarah_Albright_Resume.docx" download>
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Featured Project ── -->
+  <section class="section fade-in">
+    <div class="section-label">// featured project</div>
+    <div class="featured-card" onclick="openModal('grandmaModal')">
+      <div class="featured-top">
+        <div class="featured-name">Grandma Don't Click</div>
+        <span class="steam-pill">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M7 12h.01"/><path d="M17 12h.01"/></svg>
+          Releasing on Steam · Summer 2025
+        </span>
+      </div>
+      <div class="featured-desc">A comedy puzzle game with original dialogue, voice overs, and a full release on Steam. Built with a cross-functional team using Agile — I served as Scrum Master from early prototype to ship.</div>
+      <div class="tag-row">
+        <span class="tag accent-tag">Unity</span>
+        <span class="tag accent-tag">C#</span>
+        <span class="tag accent-tag">Agile / Scrum</span>
+        <span class="tag">Scrum Master</span>
+        <span class="tag">Voice overs</span>
+        <span class="tag">Dialogue system</span>
+        <span class="tag">Shipped</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section class="section fade-in">
+    <div class="section-label">// projects</div>
+    <div class="proj-grid">
+
+      <div class="proj-card" onclick="openModal('novelModal')">
+        <img class="proj-card-img" src="./app-icon-purple 1.png" alt="Novel Ideas">
+        <div class="proj-card-name">Novel Ideas</div>
+        <div class="proj-card-type">iOS app</div>
+        <div class="tag-row">
+          <span class="tag">Swift</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Xcode</span>
+        </div>
+      </div>
+
+      <div class="proj-card" onclick="openModal('dewyModal')">
+        <img class="proj-card-img" src="./dewey 1.png" alt="Dewy">
+        <div class="proj-card-name">Dewy</div>
+        <div class="proj-card-type">Discord bot · 2+ yrs uptime</div>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span>
+          <span class="tag">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="proj-card" onclick="openModal('terrandModal')">
+        <img class="proj-card-img" src="./image 53.png" alt="TerRand">
+        <div class="proj-card-name">TerRand</div>
+        <div class="proj-card-type">Unity plugin</div>
+        <div class="tag-row">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">Perlin noise</span>
+        </div>
+      </div>
+
+      <div class="proj-card" onclick="openModal('midnightModal')">
+        <img class="proj-card-img" src="./image 57.png" alt="Midnight Mobilizers">
+        <div class="proj-card-name">Midnight Mobilizers</div>
+        <div class="proj-card-type">Scheduling algorithm · WICS winner</div>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Hackathon</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-img" style="background:var(--surface2);display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 8v4l3 3"/><path d="M18 2v6h6"/></svg>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px">
+          <div class="proj-card-name">Symptom Tracker</div>
+          <span class="wip-badge">WIP</span>
+        </div>
+        <div class="proj-card-type">Mobile app</div>
+        <div class="tag-row">
+          <span class="tag">Swift</span>
+          <span class="tag">Speech-to-text</span>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-img" style="background:var(--surface2);display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M9 12v-1a3 3 0 0 1 6 0v1"/><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M8 6V4a2 2 0 0 1 4 0v2"/></svg>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px">
+          <div class="proj-card-name">Model Music</div>
+          <span class="wip-badge">WIP</span>
+        </div>
+        <div class="proj-card-type">Web platform</div>
+        <div class="tag-row">
+          <span class="tag">Web</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section class="section fade-in">
+    <div class="section-label">// skills</div>
+    <div class="skills-wrap">
+      <span class="skill">Python</span>
+      <span class="skill">Java</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">C</span>
+      <span class="skill">C++</span>
+      <span class="skill">C#</span>
+      <span class="skill">Swift</span>
+      <span class="skill">SQL</span>
+      <span class="skill">React</span>
+      <span class="skill">Unity</span>
+      <span class="skill">Godot</span>
+      <span class="skill">MongoDB</span>
+      <span class="skill">Firebase</span>
+      <span class="skill">Git</span>
+      <span class="skill">GitLab</span>
+      <span class="skill">Xcode</span>
+      <span class="skill">Agile / Scrum</span>
+      <span class="skill">REST APIs</span>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section class="section fade-in">
+    <div class="section-label">// experience</div>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-timeline">
+          <div class="exp-dot active"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-title">AI Quality Assurance Specialist</div>
+          <div class="exp-company">Freelance Contractor · Remote</div>
+          <div class="exp-date">Dec 2024 – Present</div>
+          <div class="exp-detail">Evaluating AI-generated CS responses, writing adversarial prompts, and selecting higher-quality outputs based on accuracy, logic, and correctness.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-timeline">
+          <div class="exp-dot"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-title">Software Intern</div>
+          <div class="exp-company">i3 Verticals · Sulphur Springs, TX</div>
+          <div class="exp-date">Summer 2022 &amp; Summer 2023</div>
+          <div class="exp-detail">Built a React + SQL internal web app (2022). Extended Java APIs and managed version control in GitLab independently (2023).</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-timeline">
+          <div class="exp-dot"></div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-title">Student Security Coordinator &amp; Student Manager</div>
+          <div class="exp-company">University Housing and Dining · Austin, TX</div>
+          <div class="exp-date">Nov 2021 – Dec 2024</div>
+          <div class="exp-detail">Designed Excel scheduling systems used by 8 managers across a 70-person team. Supervised shift coverage and attendance tracking.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <span>© Sarah Albright 2025</span>
+    <span>e.albright33@gmail.com</span>
+  </footer>
 
 </div>
 
-<div id="DewyModal" class="modal">
+<!-- ══════════════════ MODALS ══════════════════ -->
 
-<!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p class="ModalTitle">Dewy</p>
-        <p class="ModalDate">Fall 2022</p>
-        <p class="TechnologiesTitle">Technologies</p>
-        <div class="Technology">
-            <div class="SwiftLogo">
-                <img src="./Discord.js.png" class="LogoModal">
-                <p>Discord.js</p>
-            </div>
-            <div class="SwiftLogo">
-                <img src="./JavaScript-logo.png" class="LogoModal">
-                <p>JavaScript</p>
-            </div>
-            <div class="SwiftLogo">
-                <img src="./MongoDB-logo.png" class="LogoModal">
-                <p>MongoDB</p>
-            </div>
-        </div>
-        <p>My Responsibilities</p>
-        <ul>
-            <li>Designed a Discord bot using Discord.js, Node.js, and
-                MongoDB to manage and track debts between users.</li>
-        </ul>
+<!-- Grandma Don't Click -->
+<div id="grandmaModal" class="modal-overlay" onclick="closeOnBg(event,this)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('grandmaModal')">✕</button>
+    <div class="modal-title">Grandma Don't Click</div>
+    <div class="modal-date">Capstone · Spring 2025</div>
+    <div class="modal-section-label">Technologies</div>
+    <div class="modal-tech-row">
+      <div class="modal-tech"><img src="./unity-logo.png" alt="Unity">Unity</div>
+      <div class="modal-tech"><img src="./Csharp_Logo.png" alt="C#">C#</div>
     </div>
-
+    <div class="modal-section-label">About</div>
+    <div class="modal-body">
+      <ul>
+        <li>Comedy puzzle game with original dialogue and voice-over systems, releasing on Steam in summer 2025.</li>
+        <li>Served as Scrum Master, leading sprint planning and retrospectives using Agile methodology from prototype to ship.</li>
+        <li>Coordinated a cross-functional team of engineers and designers through the full development lifecycle.</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<div id="TerrandModal" class="modal">
-
-<!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="ModalMedia">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dnPro-PolAM?si=EGYI6HiNSX2_fX7N" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <p class="ModalTitle">TerRand</p>
-        <p class="ModalDate">Spring 2024</p>
-        <p class="TechnologiesTitle">Technologies</p>
-        <div class="Technology">
-            <div class="SwiftLogo">
-                <img src="./unity-logo.png" class="LogoModal">
-                <p>Unity</p>
-            </div>
-            <div class="SwiftLogo">
-                <img src="./Csharp_Logo.png" class="LogoModal">
-                <p>C#</p>
-            </div>
-        </div>
-        <p>My Responsibilities</p>
-        <p>TerRand is a Unity plugin that transforms a simple plane into procedurally generated terrain using Perlin noise. It features automatic recoloring based on height variation and dynamically adjusts the level of detail (LOD) depending on the camera’s distance, optimizing performance while maintaining visual quality. Designed for flexibility and efficiency, TerRand enables seamless terrain generation for games and simulations, providing an easy-to-use solution for developers looking to create varied landscapes with minimal manual effort.</p>
+<!-- Novel Ideas -->
+<div id="novelModal" class="modal-overlay" onclick="closeOnBg(event,this)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('novelModal')">✕</button>
+    <div class="modal-title">Novel Ideas</div>
+    <div class="modal-date">Summer 2024</div>
+    <div class="modal-video">
+      <iframe src="https://www.youtube.com/embed/p6ArKfrMrzs?si=yJJLmKZgD9prvhnY" title="Novel Ideas demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-
+    <div class="modal-section-label">Technologies</div>
+    <div class="modal-tech-row">
+      <div class="modal-tech"><img src="./swift-logo.svg" alt="Swift">Swift</div>
+      <div class="modal-tech"><img src="./firebase-logo.png" alt="Firebase">Firebase</div>
+    </div>
+    <div class="modal-section-label">About</div>
+    <div class="modal-body">
+      <ul>
+        <li>iOS app built with Swift, Storyboard, Google Books API, and Firebase — a social platform for book enthusiasts.</li>
+        <li>Features include book tracking, custom categories, book clubs, reading goals, and announcements.</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<div id="MidnightModal" class="modal">
-
-<!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p class="ModalTitle">Midnight Mobilizers</p>
-        <p class="ModalDate">Spring 2024</p>
-        <p class="TechnologiesTitle">Technologies</p>
-        <div class="Technology">
-            <div class="SwiftLogo">
-                <img src="./JavaScript-logo.png" class="LogoModal">
-                <p>JavaScript</p>
-            </div>
-        </div>
-        <p>My Responsibilities</p>
-        <ul>
-            <li>Created a JavaScript algorithm for employee scheduling during a hackathon, incorporating availability,
-work hours, and location.</li>
-            <li>Designed a weighted randomization system to prioritize employees needing more hours while
-maintaining fairness.</li>
-            <li>Awarded the UT category prize at the annual WICS hackathon.</li>
-        </ul>
+<!-- Dewy -->
+<div id="dewyModal" class="modal-overlay" onclick="closeOnBg(event,this)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('dewyModal')">✕</button>
+    <div class="modal-title">Dewy</div>
+    <div class="modal-date">Fall 2022</div>
+    <div class="modal-section-label">Technologies</div>
+    <div class="modal-tech-row">
+      <div class="modal-tech"><img src="./Discord.js.png" alt="Discord.js">Discord.js</div>
+      <div class="modal-tech"><img src="./JavaScript-logo.png" alt="JavaScript">JavaScript</div>
+      <div class="modal-tech"><img src="./MongoDB-logo.png" alt="MongoDB">MongoDB</div>
     </div>
+    <div class="modal-section-label">About</div>
+    <div class="modal-body">
+      <ul>
+        <li>Discord bot built with Discord.js, Node.js, and MongoDB to track debts between users.</li>
+        <li>Maintained 2+ years of uninterrupted uptime with a real, active user group.</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
+<!-- TerRand -->
+<div id="terrandModal" class="modal-overlay" onclick="closeOnBg(event,this)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('terrandModal')">✕</button>
+    <div class="modal-title">TerRand</div>
+    <div class="modal-date">Spring 2024</div>
+    <div class="modal-video">
+      <iframe src="https://www.youtube.com/embed/dnPro-PolAM?si=EGYI6HiNSX2_fX7N" title="TerRand demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="modal-section-label">Technologies</div>
+    <div class="modal-tech-row">
+      <div class="modal-tech"><img src="./unity-logo.png" alt="Unity">Unity</div>
+      <div class="modal-tech"><img src="./Csharp_Logo.png" alt="C#">C#</div>
+    </div>
+    <div class="modal-section-label">About</div>
+    <div class="modal-body">
+      TerRand is a Unity plugin that transforms a flat plane into procedurally generated terrain using Perlin noise. It automatically recolors based on height, dynamically adjusts LOD by camera distance, and is designed for easy integration into games and simulations.
+    </div>
+  </div>
+</div>
+
+<!-- Midnight Mobilizers -->
+<div id="midnightModal" class="modal-overlay" onclick="closeOnBg(event,this)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('midnightModal')">✕</button>
+    <div class="modal-title">Midnight Mobilizers</div>
+    <div class="modal-date">Spring 2024 · WICS Hackathon at UT Austin</div>
+    <div class="modal-section-label">Technologies</div>
+    <div class="modal-tech-row">
+      <div class="modal-tech"><img src="./JavaScript-logo.png" alt="JavaScript">JavaScript</div>
+    </div>
+    <div class="modal-section-label">About</div>
+    <div class="modal-body">
+      <ul>
+        <li>Scheduling algorithm built at the Women in Computer Science (WICS) Hackathon at UT Austin — won the UT category.</li>
+        <li>Incorporates availability, work hours, and location into shift assignments.</li>
+        <li>Uses weighted randomization to prioritize employees needing more hours while maintaining fairness.</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <script>
-    
-var span = document.getElementsByClassName("close")[0];
-var dspan = document.getElementsByClassName("close")[1];
-    
-// Get the modal
-var modal = document.getElementById("NovelIdeasModal");
-var dmodal = document.getElementById("DewyModal");
-var tmodal = document.getElementById("TerrandModal")
-var mmodal = document.getElementById("MidnightModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("NovelIdeasBtn");
-var dbtn = document.getElementById("DewyBtn");
-var tbtn = document.getElementById("TerrandBtn");
-var mbtn = document.getElementById("MidnightBtn")
-
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-    
-dbtn.onclick = function() {
-  dmodal.style.display = "block";
-}
-    
-tbtn.onclick = function() {
-  tmodal.style.display = "block";
-}
-
-mbtn.onclick = function() {
-  mmodal.style.display = "block";
-}
-    
-span.onclick = function() {
-  modal.style.display = "none";
-  dmodal.style.display = "none";
-  tmodal.style.display = "none";
-  mmodal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  function openModal(id) {
+    document.getElementById(id).classList.add('open');
+    document.body.style.overflow = 'hidden';
   }
-    if (event.target == dmodal) {
-    dmodal.style.display = "none";
+
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow = '';
   }
-    if (event.target == tmodal) {
-    tmodal.style.display = "none";
+
+  function closeOnBg(e, overlay) {
+    if (e.target === overlay) {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
   }
-    if (event.target == mmodal) {
-    mmodal.style.display = "none";
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.open').forEach(m => {
+        m.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+
+  function copyEmail(e) {
+    e.preventDefault();
+    navigator.clipboard.writeText('e.albright33@gmail.com').then(() => {
+      const label = document.getElementById('email-label');
+      label.textContent = 'Copied!';
+      setTimeout(() => label.textContent = 'e.albright33@gmail.com', 2000);
+    });
   }
-}
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
+<script>
+  /* ── Starfield ── */
+  const canvas = document.getElementById('starfield');
+  const ctx = canvas.getContext('2d');
+
+  let W, H, stars, shooters;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+
+  function mkStars() {
+    stars = Array.from({ length: 180 }, () => ({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: Math.random() * 1.2 + 0.2,
+      a: Math.random() * 0.6 + 0.2,
+      speed: Math.random() * 0.015 + 0.005,
+      phase: Math.random() * Math.PI * 2,
+    }));
+    shooters = [];
+  }
+
+  function spawnShooter() {
+    shooters.push({
+      x: Math.random() * W * 0.7,
+      y: Math.random() * H * 0.4,
+      len: Math.random() * 120 + 80,
+      speed: Math.random() * 10 + 8,
+      angle: Math.PI / 5 + (Math.random() * 0.3 - 0.15),
+      life: 1,
+      decay: Math.random() * 0.025 + 0.018,
+    });
+  }
+
+  let frame = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    /* stars */
+    stars.forEach(s => {
+      const twinkle = s.a + Math.sin(frame * s.speed + s.phase) * 0.2;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(200,190,255,${twinkle})`;
+      ctx.fill();
+    });
+
+    /* shooting stars */
+    shooters = shooters.filter(s => s.life > 0);
+    shooters.forEach(s => {
+      const tx = s.x + Math.cos(s.angle) * s.len;
+      const ty = s.y + Math.sin(s.angle) * s.len;
+      const grad = ctx.createLinearGradient(s.x, s.y, tx, ty);
+      grad.addColorStop(0, `rgba(167,139,250,0)`);
+      grad.addColorStop(0.3, `rgba(200,185,255,${s.life * 0.8})`);
+      grad.addColorStop(1, `rgba(255,255,255,${s.life})`);
+      ctx.beginPath();
+      ctx.moveTo(s.x, s.y);
+      ctx.lineTo(tx, ty);
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+
+      /* move */
+      s.x += Math.cos(s.angle) * s.speed;
+      s.y += Math.sin(s.angle) * s.speed;
+      s.life -= s.decay;
+    });
+
+    /* spawn randomly */
+    if (frame % 140 === 0 && Math.random() < 0.7) spawnShooter();
+    if (frame % 220 === 0 && Math.random() < 0.4) spawnShooter();
+
+    frame++;
+    requestAnimationFrame(draw);
+  }
+
+  resize();
+  mkStars();
+  draw();
+  window.addEventListener('resize', () => { resize(); mkStars(); });
+</script>
+
+</body>
+</html>
