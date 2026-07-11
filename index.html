@@ -25,6 +25,19 @@
       --sans: 'Inter', sans-serif;
       --radius: 10px;
       --radius-lg: 16px;
+      .modal-img {
+        width: 100%;
+        border-radius: var(--radius);
+        overflow: hidden;
+        margin-bottom: 1.25rem;
+        border: 1px solid var(--border);
+        }
+
+        .modal-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+        }
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -659,7 +672,7 @@
       </div>
       <div>
         <div class="hero-name">Sarah <span class="accent">"Emma"</span> Albright</div>
-        <div class="hero-sub">CS @ UT Austin &nbsp;·&nbsp; Austin, TX &nbsp;·&nbsp; Dec 2025</div>
+        <div class="hero-sub">CS @ UT Austin &nbsp;·&nbsp; Austin, TX &nbsp;·&nbsp; Dec 2026</div>
         <div class="status-badge">
           <span class="status-dot"></span>
           Open to work
@@ -758,7 +771,10 @@
 
       <div class="proj-card" onclick="openModal('midnightModal')">
         <img class="proj-card-img" src="./image 57.png" alt="Midnight Mobilizers">
-        <div class="proj-card-name">Midnight Mobilizers</div>
+        <div style="display:flex;align-items:center;gap:6px">
+            <div class="proj-card-name">Midnight Mobilizers</div>
+            <span style="font-size:14px" title="WICS Hackathon winner">🥇</span>
+        </div>
         <div class="proj-card-type">Scheduling algorithm · WICS winner</div>
         <div class="tag-row">
           <span class="tag">JavaScript</span>
@@ -786,7 +802,7 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M9 12v-1a3 3 0 0 1 6 0v1"/><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M8 6V4a2 2 0 0 1 4 0v2"/></svg>
         </div>
         <div style="display:flex;align-items:center;gap:6px">
-          <div class="proj-card-name">Model Music</div>
+          <div class="proj-card-name">Harmonically</div>
           <span class="wip-badge">WIP</span>
         </div>
         <div class="proj-card-type">Web platform</div>
@@ -871,7 +887,7 @@
 
   <!-- ── Footer ── -->
   <footer class="footer">
-    <span>© Sarah Albright 2025</span>
+    <span>© Sarah Albright 2026</span>
     <span>e.albright33@gmail.com</span>
   </footer>
 
@@ -885,6 +901,9 @@
     <button class="modal-close" onclick="closeModal('grandmaModal')">✕</button>
     <div class="modal-title">Grandma Don't Click</div>
     <div class="modal-date">Capstone · Spring 2025</div>
+    <div class="modal-video">
+      <iframe src="https://youtu.be/fPSzD7peKAk" title="Grandma Don't Click demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <div class="modal-section-label">Technologies</div>
     <div class="modal-tech-row">
       <div class="modal-tech"><img src="./unity-logo.png" alt="Unity">Unity</div>
@@ -908,7 +927,7 @@
     <div class="modal-title">Novel Ideas</div>
     <div class="modal-date">Summer 2024</div>
     <div class="modal-video">
-      <iframe src="https://www.youtube.com/embed/p6ArKfrMrzs?si=yJJLmKZgD9prvhnY" title="Novel Ideas demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://youtu.be/p6ArKfrMrzs" title="Novel Ideas demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="modal-section-label">Technologies</div>
     <div class="modal-tech-row">
@@ -954,7 +973,7 @@
     <div class="modal-title">TerRand</div>
     <div class="modal-date">Spring 2024</div>
     <div class="modal-video">
-      <iframe src="https://www.youtube.com/embed/dnPro-PolAM?si=EGYI6HiNSX2_fX7N" title="TerRand demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://youtu.be/dnPro-PolAM" title="TerRand demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="modal-section-label">Technologies</div>
     <div class="modal-tech-row">
@@ -973,6 +992,9 @@
   <div class="modal-box">
     <button class="modal-close" onclick="closeModal('midnightModal')">✕</button>
     <div class="modal-title">Midnight Mobilizers</div>
+    <div class="modal-img">
+            <img src="./wicsWin.JPG" alt="WICS Hackathon win">
+    </div>
     <div class="modal-date">Spring 2024 · WICS Hackathon at UT Austin</div>
     <div class="modal-section-label">Technologies</div>
     <div class="modal-tech-row">
